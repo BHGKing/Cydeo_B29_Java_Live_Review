@@ -9,15 +9,21 @@ public class CellPhone {
         double price = 1200.99;
         int storage = 128;
         boolean hasCamera = true;
-        String simA = "A";
-        String simB = "B";
-        String simC = "C";
-
+        char simA = 'A';
 
         System.out.println("We have a brand new " +modelName+ " from " +brandName);
         System.out.println("It comes in the color " +color+ " and has " +storage+ "GB memory");
-        System.out.println("It has a camera and operates with the " +"\""+simA+"\""+ " type sim");
+        System.out.println("Has a camera: " +hasCamera+ " and operates with the " +"\""+simA+"\""+ " type sim");
         System.out.println("Get your very own " +modelName+ " for only $" +price);
+
+        // as a variable
+
+        String ad = "We have a brand new " +modelName+ " from " +brandName+
+                "\nIt comes in the color " +color+ " and has " +storage+ "GB memory" +
+                "\nHas a camera: " +hasCamera+ " and operates with the " +"\""+simA+"\""+ " type sim" +
+                "\nGet your very own " +modelName+ " for only $" +price;
+
+        System.out.println(ad);
     }
 }
 /*
