@@ -3,13 +3,13 @@ package week2;
 public class Pizza {
     public static void main(String[] args) {
 
-        String typeOfPizza = "cheese";
-        int slicesOfPizza = 8;
-        int amountOfPeople = 3;
-        int slicesLeft = slicesOfPizza % amountOfPeople;
+        String type = "cheese";
+        int slices = 8;
+        int people = 3;
 
-        System.out.println("We ordered a " +typeOfPizza+ " pizza with " +slicesOfPizza+ " slices.");
-        System.out.println(amountOfPeople+ " people ate 2 slices each, so there was " +slicesLeft+ " slices left");
+        String summary = "We ordered a " + type + " pizza with " + slices + " slices. " + people + " people ate " + (slices/people)
+                        + " slices each so there was " + (slices % people) + " slices left";
+        System.out.println(summary);
     }
 }
 /*

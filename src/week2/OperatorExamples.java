@@ -18,11 +18,14 @@ public class OperatorExamples {
                 num
                 num + 1
          */
+        System.out.println("----------------------------");
 
         int x = 15;
-        int y = x++;
+        int y = ++x;
         System.out.println("x " + x); // x = 15 -> 16
         System.out.println("y " + y); // y = 15
+
+        System.out.println("-------------------------------------");
 
         int z = 90;
         int w = --z; // because this is a predecrement we subtract 1 right away

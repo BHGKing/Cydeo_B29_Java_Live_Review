@@ -3,18 +3,19 @@ package week2;
 public class Balance {
     public static void main(String[] args) {
 
-        int amountBalance = 100;
-        int withdrawAmount = 200;
+        double balance = 1000;
+        double withdrawAmount = 500;
         int overDraftFee = -100;
 
-        int balance = amountBalance - withdrawAmount;
+        balance -= withdrawAmount;
+
+        //int balance = amountBalance - withdrawAmount;
 
         if (balance < 0){
-            balance = balance + overDraftFee;
-            System.out.println("You were charged an overdraft fee of $100");
+            System.out.println("Withdrew more than you had in the account. Overdraft applied!");
+            balance += (balance * 0.2);
             System.out.println("Your balance is $" + balance);
         }else {
-            balance = amountBalance - withdrawAmount;
             System.out.println("Your balance is $" + balance);
         }
     }

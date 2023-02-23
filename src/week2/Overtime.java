@@ -3,8 +3,8 @@ package week2;
 public class Overtime {
     public static void main(String[] args) {
 
-        int hourlyRate = 50;
-        int hoursWorked = 100;
+        double hourlyRate = 50;
+        int hoursWorked = 40;
         double overtimeHoursWorked = hoursWorked - 40;
         double overTimePay = hourlyRate * 1.5;
         double netPay;
