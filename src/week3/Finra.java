@@ -3,27 +3,29 @@ package week3;
 public class Finra {
     public static void main(String[] args) {
 
-        int num = 1;
+        int num = 15;
+        boolean by3 = num % 3 == 0;
+        boolean by5 = num % 5 == 0;
 
-        if (num % 3 == 0 || num % 5 == 0 || num % 3 == 0 && num % 5 == 0){
 
 
-                if (num % 3 == 0 && num % 5 == 0){
+        if (by3 && by5){
 
-                    System.out.println("FINRA");
+            System.out.println("FINRA");
 
-                }else if (num % 5 == 0){
+        }else if (by5){
 
-                    System.out.println("RA");
+            System.out.println("RA");
 
-                }else {
+        }else if (by3) {
 
-                    System.out.println("FIN");
+            System.out.println("FIN");
 
-                }
-
-        }else {
+        } else {
             System.out.println(num);
         }
+
+        System.out.println( by3&&by5 ?"FINRA" : by3 ?"FIN" : by5 ?"RA" : num);
+
     }
 }
